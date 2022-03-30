@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My calculator</title>
+    </head>
+    <body>
+        <h1>My Calculator</h1>
+        first number<input type="text" id="firstNum"><br/><br/>
+        second number<input type="text"id="secNum"><br/><br/>
+        
+<input type="button" value="add" onclick="add()">
+<input type="button" value="subtract" onclick="subtract()">
+
+<input type="button" value="multiply" onclick="multiply()">
+<input type="button" value="divide" onclick="divide()">
+
+<br/><br/>
+
+          result<input type="text"id="result">
+          <script>
+              let a = parseInt(document.getElementById('firstNum').value);
+              let b = parseInt(document.getElementById('secNum').value);
+              function add(){
+              let a = parseInt(document.getElementById('firstNum').value);
+              let b = parseInt(document.getElementById('secNum').value);
+            document.getElementById('result').value = a + b;
+          }
+          function subtract(){
+            let a = parseInt(document.getElementById('firstNum').value);
+              let b = parseInt(document.getElementById('secNum').value);
+            document.getElementById('result').value = a - b;
+            
+              
+          }
+          function multiply(){
+            let a = parseInt(document.getElementById('firstNum').value);
+              let b = parseInt(document.getElementById('secNum').value);
+            document.getElementById('result').value = a * b;}
+          function divide(){
+                let a = parseInt(document.getElementById('firstNum').value);
+              let b = parseInt(document.getElementById('secNum').value);
+            document.getElementById('result').value = a/b;
+            }
+            
+          </script>
+    </body>
+</html>
